@@ -1,0 +1,31 @@
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > div {
+    > h2 {
+      font-size: 78px;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    > span {
+      margin-top: 35px;
+      font-size: 23px;
+      font-weight: 400;
+    }
+  }
+}
+
+.joinProject{
+    margin-top: 114px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    >h3{
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0;
+    }
+}

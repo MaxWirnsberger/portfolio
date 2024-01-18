@@ -1,0 +1,14 @@
+.elpollolocoProject {
+    margin-top: 70px;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+
+    > h3 {
+      font-size: 48px;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+}
