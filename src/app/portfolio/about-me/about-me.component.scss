@@ -1,0 +1,49 @@
+.leftSideAboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // width: 40vw;
+
+    >div{
+        >h2{
+            font-size: 78px;
+            justify-self: start;
+            cursor: default;
+    
+            &:hover{
+                color: #5988FF;
+            }
+        }
+    
+        >span{
+            font-size: 23px;
+            display: flex;
+        }
+    }
+
+    >button{
+        margin-top: 58px;
+        text-decoration: none;
+        background-color: transparent;
+        border: 4px solid #000000;
+        cursor: pointer;
+        padding: 20px 60px 20px 60px;
+        font-size: 23px;
+    }
+}
+
+.aboutMeContainer{
+    display: flex;
+
+    >img{
+        transform: translateY(50px);
+    }
+}
+
+.arrowSeparator{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
