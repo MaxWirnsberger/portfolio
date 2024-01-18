@@ -25,14 +25,14 @@ export class HeroBannerComponent {
   private imageSwitchInterval: any;
 
   ngOnInit(): void {
-    this.imageSwitchInterval = setInterval(() => {
-      this.currentImageIndex = (this.currentImageIndex + 1) % this.arrowImages.length;
-    }, 90);
+      this.imageSwitchInterval = setInterval(() => {
+        this.currentImageIndex = (this.currentImageIndex + 1) % this.arrowImages.length;
+      }, 150);
   }
 
   ngOnDestroy(): void {
-    if (this.imageSwitchInterval) {
-      clearInterval(this.imageSwitchInterval);
+      if (this.imageSwitchInterval) {
+        clearInterval(this.imageSwitchInterval);
+      }
     }
-  }
 }
