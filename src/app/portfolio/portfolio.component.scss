@@ -1,4 +1,12 @@
-.portfolio_content{
+.root_content {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.portfolio_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    max-width: 1440px;
+    align-items: center;
 }
