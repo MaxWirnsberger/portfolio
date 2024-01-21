@@ -20,6 +20,21 @@ export class MySkillsComponent {
     "assets/imgs/skills/Scrum.png",
     "assets/imgs/skills/Api.png",
     "assets/imgs/skills/Wordpress.png",
+    "assets/imgs/skills/materialDesign.png",
+  ]
+
+  skillimgsColor: string[] = [
+    "assets/imgs/skills/Angular_color.png",
+    "assets/imgs/skills/Typescript_color.png",
+    "assets/imgs/skills/JavScript_color.png",
+    "assets/imgs/skills/html_color.png",
+    "assets/imgs/skills/css_color.png",
+    "assets/imgs/skills/Firebase_color.png",
+    "assets/imgs/skills/Git_color.png",
+    "assets/imgs/skills/Scrum_color.png",
+    "assets/imgs/skills/Api_color.png",
+    "assets/imgs/skills/Wordpress_color.png",
+    "assets/imgs/skills/materialDesign_color.png",
   ]
 
   skilltext: string[] = [
@@ -33,5 +48,6 @@ export class MySkillsComponent {
     "Scrum",
     "API",
     "Wordpress",
+    "Material Design",
   ]
 }

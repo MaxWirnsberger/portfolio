@@ -6,7 +6,7 @@
   left: 0;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 3;
 
   display: flex;
   align-items: center;
@@ -33,8 +33,17 @@
   }
 }
 
-.navMenu {
+#menuContainer{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: #fffcf3;
+  z-index: 2;
+}
+
+.navMenu {
   display: flex;
   flex-direction: column;
   align-items: center;
