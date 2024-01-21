@@ -1,11 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { NavbarComponent } from './navbar/navbar.component';
 import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-hero-banner',
   standalone: true,
-  imports: [NavbarComponent, NgFor],
+  imports: [NgFor],
   templateUrl: './hero-banner.component.html',
   styleUrl: './hero-banner.component.scss',
 })

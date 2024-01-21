@@ -1,0 +1,131 @@
+.headerMenu {
+  width: 100%;
+  height: 92px;
+  background-color: #fffcf3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+
+    > a {
+      > img {
+        height: 60px;
+      }
+    }
+    >div{
+      cursor: pointer;
+      > img {
+        height: 32px;
+      }
+    }
+  }
+}
+
+.navMenu {
+  background-color: #fffcf3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+
+  padding-top: 120px;
+
+  > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    > a {
+      font-size: 96px;
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+
+      &::before {
+        content: "";
+        position: absolute;
+        border-left: 4px solid black;
+        border-bottom: 4px solid black;
+        width: 30px;
+        height: 40px;
+        left: -5%;
+        transform: translateY(170%);
+      }
+    }
+  }
+}
+
+.footerMenu {
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
+  background-color: black;
+  color: white;
+
+  .footerMenuContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      max-width: 1440px;
+      width: 100%;
+
+      > h2 {
+        font-weight: 800;
+        font-size: 78px;
+      }
+    }
+  }
+
+  .endOfFooterContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+
+    .rightSideEndOfFooter {
+      display: flex;
+      gap: 42px;
+
+      > img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+
+  .legalNotice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+    > div {
+      display: flex;
+      justify-content: end;
+      max-width: 1440px;
+      width: 100%;
+
+      > a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -7,10 +7,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #5988FF;
+    background: #5988ff;
     border-radius: 50px;
     z-index: 1;
-}
+  }
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +23,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: url('./assets/imgs/mouse/myFace.png'), auto;
+}
+
+.menuSetting{
+  overflow: hidden;
+}
+
+.display_none{
+  display: none!important;
 }
 
 /* syne-regular - latin */
