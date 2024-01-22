@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   > div {
     > h2 {
       font-size: 78px;
       font-weight: 800;
       margin: 0;
 
-      &:hover{
-        color: #5988FF;
+      &:hover {
+        color: #5988ff;
       }
     }
 
@@ -21,15 +22,88 @@
   }
 }
 
-.joinProject{
-    margin-top: 114px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.leftImgProject {
+  position: relative;
+  margin-top: 114px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
-    >h3{
-        font-size: 48px;
-        font-weight: 700;
-        margin: 0;
+  .projectImg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 2.5%;
+      top: 2.5%;
+      border: 4px solid black;
     }
+
+    .arrowProject{
+      position: absolute;
+      right: -10%;
+    }
+  }
+
+  .projectCounter {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .projectText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 35px;
+    padding: 0 33px 0 120px;
+
+    .projectTitle {
+      font-size: 45px;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .projectSkill {
+      font-size: 23px;
+      font-weight: 400;
+      color: #5988ff;
+    }
+
+    .projectDescription {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Overpass";
+    }
+
+    .projectButtons{
+      display: flex;
+      gap: 16px;
+
+      >a{
+        text-decoration: none;
+        border: 4px solid black;
+        padding: 20px 30px 20px 30px;
+        font-size: 23px;
+        font-weight: 400;
+        color: black;
+        transition: padding 255ms;
+
+        &:hover{
+          padding: 20px 60px 20px 60px;
+        }
+      }
+    }
+  }
 }
