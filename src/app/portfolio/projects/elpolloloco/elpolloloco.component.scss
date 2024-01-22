@@ -1,14 +1,119 @@
-.elpollolocoProject {
-    margin-top: 70px;
 
-  > div {
+.rightImgProject {
+  position: relative;
+  margin-top: 114px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .projectImg {
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    position: relative;
 
-    > h3 {
-      font-size: 48px;
-      font-weight: 700;
+    >img{
+      width: 620px;
+      height: 393px;
+      filter: grayscale(1);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      right: 2.5%;
+      top: 2.5%;
+      border: 4px solid black;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    .arrowProject{
+      position: absolute;
+      width: 75.7px;
+      height: 75.7px;
+      left: -10%;
+      opacity: 0;
+    }
+  }
+
+  .projectCounter {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .projectText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 35px;
+    padding-right: 120px;
+    opacity: 0;
+
+    .projectTitle {
+      font-size: 45px;
+      font-weight: 800;
       margin: 0;
     }
+
+    .projectSkill {
+      font-size: 23px;
+      font-weight: 400;
+      color: #5988ff;
+    }
+
+    .projectDescription {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Overpass";
+    }
+
+    .projectButtons{
+      display: flex;
+      gap: 16px;
+
+      >a{
+        text-decoration: none;
+        border: 4px solid black;
+        padding: 20px 30px 20px 30px;
+        font-size: 23px;
+        font-weight: 400;
+        color: black;
+        transition: padding 255ms;
+
+        &:hover{
+          padding: 20px 60px 20px 60px;
+        }
+      }
+    }
+  }
+}
+
+.rightImgProject:hover{
+  .projectImg img{
+    filter: grayscale(0);
+  }
+
+  .projectImg::before {
+      opacity: 1;
+  }
+
+  .projectImg{
+    .arrowProject{
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+
+  .projectText{
+    opacity: 1;
   }
 }
