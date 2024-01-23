@@ -143,6 +143,7 @@
       width: 100%;
 
       > a {
+        position: relative;
         text-decoration: none;
         color: white;
         font-weight: 400;
@@ -159,7 +160,7 @@
         &:hover::before {
           border-bottom: 1px solid white;
           width: 85px;
-          right: 40px;
+          right: 0px;
         }
       }
     }

@@ -7,20 +7,32 @@
       <h3>Want to discuss a new project?</h3>
       <span> Say hello! let's discuss your ideas and make it happen </span>
       <form action="" method="post">
-        <input class="inputFields" type="text" placeholder="Your name" />
-        <input class="inputFields" type="text" placeholder="Your email" />
-        <textarea
-          class="inputFields"
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your message"
-        ></textarea>
-        <span
-          >I've read the <a href="privacyPolicy">privacy policy</a>and agree to the
-          processing of my data as outlined</span
-        >
+        <div class="textFields">
+          <input class="inputFields" type="text" id="nameId" required/>
+          <label for="nameId">Your name</label>
+        </div>
+        <div class="textFields">
+          <input class="inputFields" type="email" id="emailId" required/>
+          <label for="emailId">Your email</label>
+        </div>
+        <div class="textFields">
+          <textarea
+            class="inputFields"
+            name=""
+            id="textId"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <label for="textId">Your message</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" required/>
+          <label for="checkbox">
+            I've read the <a href="privacyPolicy">privacy policy</a> and agree to
+            the processing of my data as outlined
+          </label>
+        </div>
         <button>Send message</button>
       </form>
       <div class="footerArrowUp">
@@ -41,7 +53,7 @@
         <a href="https://github.com/MaxWirnsberger"
           ><img src="./../../../assets/imgs/footer/Github.png" alt=""
         /></a>
-        <a href=""
+        <a href="maximilian@wirnsberger.io"
           ><img src="./../../../assets/imgs/footer/Email.png" alt=""
         /></a>
         <a href="https://www.linkedin.com/in/maximilian-wirnsberger/">
