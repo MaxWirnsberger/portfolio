@@ -6,19 +6,31 @@
     <div class="footerForm">
       <h3>Want to discuss a new project?</h3>
       <span> Say hello! let's discuss your ideas and make it happen </span>
-      <form action="" method="post">
+      <form action="https://formspree.io/f/mkndojaz" method="POST" onsubmit="sendMail()">
         <div class="textFields">
-          <input class="inputFields" type="text" id="nameId" required/>
+          <input
+            class="inputFields"
+            type="text"
+            id="nameId"
+            name="name"
+            required
+          />
           <label for="nameId">Your name</label>
         </div>
         <div class="textFields">
-          <input class="inputFields" type="email" id="emailId" required/>
+          <input
+            class="inputFields"
+            type="email"
+            id="emailId"
+            name="email"
+            required
+          />
           <label for="emailId">Your email</label>
         </div>
         <div class="textFields">
           <textarea
             class="inputFields"
-            name=""
+            name="message"
             id="textId"
             cols="30"
             rows="10"
@@ -27,10 +39,10 @@
           <label for="textId">Your message</label>
         </div>
         <div class="checkbox">
-          <input type="checkbox" id="checkbox" required/>
+          <input type="checkbox" id="checkbox" required />
           <label for="checkbox">
-            I've read the <a href="privacyPolicy">privacy policy</a> and agree to
-            the processing of my data as outlined
+            I've read the <a href="privacyPolicy">privacy policy</a> and agree
+            to the processing of my data as outlined
           </label>
         </div>
         <button>Send message</button>
@@ -53,7 +65,7 @@
         <a href="https://github.com/MaxWirnsberger"
           ><img src="./../../../assets/imgs/footer/Github.png" alt=""
         /></a>
-        <a href="maximilian@wirnsberger.io"
+        <a href="mailto:max@wirnsberger.io"
           ><img src="./../../../assets/imgs/footer/Email.png" alt=""
         /></a>
         <a href="https://www.linkedin.com/in/maximilian-wirnsberger/">
