@@ -71,14 +71,17 @@
 
 .personImg{
   position: relative;
-  transition: left 2s;
+
+  .personImg::before{
+    transition: all 2s;
+  }
 }
 .personImg:hover::before{
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  left: 5%;
-  top: 5%;
+  left: 2.5%;
+  top: 2.5%;
   border: 4px solid black;
 }

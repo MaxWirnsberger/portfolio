@@ -105,9 +105,15 @@
       display: flex;
       gap: 42px;
 
-      > img {
-        height: 40px;
-        width: 40px;
+      > a {
+        transition: 0.25s;
+        > img {
+          height: 40px;
+          width: 40px;
+        }
+        &:hover {
+          transform: translateY(-15px);
+        }
       }
     }
   }
@@ -117,6 +123,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 25px;
   padding-bottom: 50px;
 
   > div {
@@ -130,6 +137,20 @@
       color: white;
       font-weight: 400;
       font-size: 16px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        transition: 0.25s;
+      }
+
+      &:hover::before {
+        border-bottom: 1px solid white;
+        width: 85px;
+        right: 40px;
+      }
     }
   }
 }
@@ -138,4 +159,9 @@
   display: flex;
   justify-content: end;
   width: 100%;
+  transition: 0.25s;
+
+  &:hover{
+    transform: translateY(-15px);
+  }
 }
