@@ -103,6 +103,7 @@
       > h2 {
         font-weight: 800;
         font-size: 78px;
+        padding-left: 16px;
       }
     }
   }
@@ -113,9 +114,14 @@
     max-width: 1440px;
     width: 100%;
 
+    >span{
+      padding-left: 16px;
+    }
+
     .rightSideEndOfFooter {
       display: flex;
       gap: 42px;
+      padding-right: 16px;
 
       > a {
         transition: 0.25s;
@@ -136,6 +142,7 @@
     align-items: center;
     padding-top: 25px;
     padding-bottom: 50px;
+    padding-right: 16px;
 
     > div {
       display: flex;
@@ -166,4 +173,75 @@
       }
     }
   }
+}
+
+@media (max-width: 620px) {
+  .navMenu{
+    >nav{
+      >a{
+        font-size: 65px;
+
+        &::before{
+          transform: translateY(80%);
+        }
+      }
+
+      >a:hover{
+        &::before{
+          width: 170px;
+        }
+      }
+    }
+  }
+
+  .footerMenuContent{
+    >div{
+      >h2{
+        font-size: 65px!important;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .navMenu{
+    >nav{
+      >a{
+        font-size: 50px;
+
+        &::before{
+          transform: translateY(130%);
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      >a:hover{
+        &::before{
+          width: 130px;
+        }
+      }
+    }
+  }
+
+  .footerMenuContent{
+    >div{
+      >h2{
+        font-size: 50px!important;
+      }
+    }
+  }
+
+  .footerMenu{
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+    .endOfFooterContent {
+      flex-direction: column;
+
+      .rightSideEndOfFooter{
+        padding-top: 16px;
+        display: flex;
+        justify-content: end;
+      }
+    }
+  } 
 }

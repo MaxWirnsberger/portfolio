@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    padding-left: 16px;
 
     > img {
       width: 620px;
@@ -125,5 +126,131 @@
   .projectText {
     opacity: 1;
     left: 700px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .leftImgProject:hover {
+    .projectText {
+      left: 600px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .leftImgProject {
+    .projectText {
+      left: 600px;
+
+      .projectTitle {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .leftImgProject {
+    .projectText {
+      left: 580px;
+
+      .projectTitle {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .leftImgProject {
+    flex-direction: column;
+    .projectCounter {
+      top: -73px;
+      left: 10px;
+      right: auto;
+    }
+
+    .projectText {
+      position: static;
+      padding: 0 16px 0 16px;
+      opacity: 1;
+    }
+
+    .projectImg {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding-left: 16px;
+
+      > img {
+        filter: grayscale(0);
+      }
+
+      &::before {
+        width: 620px;
+        opacity: 1;
+      }
+
+      .arrowProject {
+        left: 610px;
+        opacity: 1;
+        z-index: 1;
+        transform: rotate(180deg);
+        width: 75.7px;
+        height: 75.7px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .leftImgProject {
+    .projectImg {
+      > img {
+        width: 85%;
+        height: auto;
+      }
+      &::before {
+        width: 85%;
+        opacity: 1;
+      }
+      .arrowProject {
+        left: 83%;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .leftImgProject {
+    .projectImg {
+      .arrowProject {
+        width: 40px;
+        height: 40px;
+        left: 85%;
+      }
+    }
+
+    .projectText {
+      gap: 8px;
+
+      .projectButtons {
+        > a {
+          padding: 15px!important;
+        }
+      }
+    }
+  }
+
+  .leftImgProject:hover {
+    .projectImg {
+      .arrowProject {
+        width: 40px;
+        height: 40px;
+        left: 85%;
+      }
+    }
   }
 }

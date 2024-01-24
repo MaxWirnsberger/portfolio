@@ -45,12 +45,12 @@
     gap: 15px;
     margin-top: 20px;
 
-    .textFields{
+    .textFields {
       display: flex;
       align-items: center;
       position: relative;
 
-      >label{
+      > label {
         position: absolute;
         top: 15px;
         left: 15px;
@@ -59,35 +59,36 @@
       }
 
       > textarea {
-        height: 350px!important;
+        height: 350px !important;
       }
     }
 
-    .inputFields{
+    .inputFields {
       height: 25px;
       background-color: black;
       min-width: 617px;
       font-size: 16px;
       font-weight: 400;
-      font-family: 'Syne';
+      font-family: "Syne";
       color: white;
       padding: 15px;
       border: none;
-      box-shadow: 0 2px #f8f8ee!important;
+      box-shadow: 0 2px #f8f8ee !important;
       transition: 0.25s;
 
-      &:hover{
+      &:hover {
         border: 4px solid white;
         box-shadow: none;
       }
 
-      &:focus-visible{
+      &:focus-visible {
         border: 4px solid white;
         box-shadow: none;
         outline: none;
       }
 
-      &:focus ~ label,  &:not(:placeholder-shown) ~ label{
+      &:focus ~ label,
+      &:not(:placeholder-shown) ~ label {
         top: -10px;
         left: 7px;
       }
@@ -105,7 +106,7 @@
       cursor: pointer;
       transition: 0.25s;
 
-      &:hover{
+      &:hover {
         opacity: 1;
         border: 4px solid white;
         color: white;
@@ -126,6 +127,7 @@
     justify-content: space-between;
     max-width: 1440px;
     width: 100%;
+    padding: 0 16px 0 16px;
 
     .leftSideEndOfFooter {
       display: flex;
@@ -165,6 +167,7 @@
   align-items: center;
   padding-top: 25px;
   padding-bottom: 50px;
+  padding-right: 16px;
 
   > div {
     display: flex;
@@ -202,21 +205,125 @@
   width: 100%;
   transition: 0.25s;
 
-  &:hover{
+  &:hover {
     transform: translateY(-15px);
   }
 }
 
-.checkbox{
-  >label{
-    >a{
+.checkbox {
+  > label {
+    > a {
       text-decoration: none;
       color: #5988ff;
       transition: 1s;
 
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footerContainer {
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+  }
+}
+
+@media (max-width: 700px) {
+  .footerForm {
+    > form {
+      .inputFields {
+        min-width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .footerForm {
+    > form {
+      .inputFields {
+        min-width: 450px;
+      }
+      .checkbox {
+        text-align: center;
+      }
+    }
+  }
+
+  .endOfFooter {
+    .endOfFooterContent {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
+      .leftSideEndOfFooter {
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+
+  .footerArrowUp {
+    display: none;
+  }
+
+  .legalNotice {
+    > div {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footerForm {
+    > form {
+      .inputFields {
+        min-width: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .footerForm {
+    > form {
+      .inputFields {
+        min-width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .footerForm {
+    > form {
+      .inputFields {
+        min-width: 250px;
+      }
+    }
+  }
+}
+
+.footerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h3 {
+    color: #5988ff;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  > span {
+    font-weight: 400;
+    font-size: 23px;
+  }
+
+  > form {
+    > button {
+      padding: 10px 30px 10px 30px;
     }
   }
 }
