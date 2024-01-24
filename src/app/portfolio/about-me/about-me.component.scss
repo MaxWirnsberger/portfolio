@@ -10,6 +10,7 @@
       font-weight: 800;
       justify-self: start;
       cursor: default;
+      padding: 0 16px 0 24px;
 
       &:hover {
         color: #5988ff;
@@ -18,6 +19,9 @@
     > div {
       display: flex;
       justify-content: center;
+      padding-left: 16px;
+      padding-right: 30px;
+
       > div {
         display: flex;
         flex-direction: column;
@@ -37,13 +41,13 @@
           font-size: 23px;
           text-decoration: none;
           color: black;
-          transition: 0.20s;
+          transition: 0.2s;
 
-          &:hover{
+          &:hover {
             font-weight: 700;
           }
 
-          &:active{
+          &:active {
             color: white;
             border: 4px solid white;
             background-color: #000000;
@@ -69,14 +73,14 @@
   justify-content: end;
 }
 
-.personImg{
+.personImg {
   position: relative;
 
-  .personImg::before{
+  .personImg::before {
     transition: all 2s;
   }
 }
-.personImg:hover::before{
+.personImg:hover::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -84,4 +88,70 @@
   left: 2.5%;
   top: 2.5%;
   border: 4px solid black;
+}
+
+@media (max-width: 1100px) {
+  .leftSideAboutMe {
+    > div {
+      >h2{
+        font-size: 70px;
+      }
+      > div {
+        flex-direction: column;
+        gap: 40px;
+
+      }
+    }
+  }
+  .talkButton{
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .leftSideAboutMe {
+    > div {
+      >h2{
+        font-size: 55px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .leftSideAboutMe {
+    > div {
+      >h2{
+        font-size: 45px;
+      }
+    }
+    .personImg img{
+      height: 400px;
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .leftSideAboutMe {
+    > div {
+      >h2{
+        font-size: 40px;
+      }
+    }
+    .personImg img{
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .leftSideAboutMe {
+    .personImg img{
+      height: 250px;
+      width: 250px;
+    }
+  }
 }

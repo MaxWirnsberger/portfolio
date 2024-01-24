@@ -62,7 +62,7 @@
       gap: 35px;
       width: 25%;
       position: absolute;
-      right: -10px;
+      right: 0px;
       opacity: 0;
       transition: 0.25s;
 
@@ -131,7 +131,7 @@
   .projectText {
     .projectContent{
       opacity: 1;
-      right: 725px;
+      left: 0;
       width: 50%;
     }
   }

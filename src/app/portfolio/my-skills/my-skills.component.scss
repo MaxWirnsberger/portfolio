@@ -6,6 +6,8 @@
   justify-content: center;
   position: relative;
   margin-top: 100px;
+  margin-left: 24px;
+  margin-right: 24px;
   padding: 100px 0 100px 0;
 
   > h2 {
@@ -40,31 +42,104 @@
         justify-content: center;
         align-items: center;
 
-        &:hover{
+        &:hover {
           color: #5988ff;
         }
 
-        >img{
+        > img {
           transition: opacity 225ms ease-in-out;
         }
 
-        .skillImg{
-          &:hover{
+        .skillImg {
+          &:hover {
             opacity: 0;
           }
-          
         }
 
         .hoverImg {
           position: absolute;
           top: 0;
           opacity: -1;
-          
-          &:hover{
+
+          &:hover {
             opacity: 1;
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  .skillContainer {
+    > div {
+      padding: 0px 200px 0px 200px;
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .skillContainer {
+    > div {
+      padding: 0px 150px 0px 150px;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .skillContainer {
+    > div {
+      padding: 0px 100px 0px 100px;
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .skillContainer {
+    > div {
+      padding: 0px 50px 0px 50px;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .skillContainer {
+    > div {
+      padding: 0px 20px 0px 20px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .skillContainer {
+    > div {
+      padding: 0px 10px 0px 10px;
+    }
+
+    > h2 {
+      font-size: 45px;
+      top: -45px;
+    }
+
+    .skillImg {
+      width: 55px;
+    }
+
+    .hoverImg {
+      width: 55px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .skillContainer {
+    > div {
+      gap: 30px;
+    }
+
+    > h2 {
+      font-size: 35px;
+      top: -35px;
     }
   }
 }
