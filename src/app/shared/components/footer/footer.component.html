@@ -6,7 +6,11 @@
     <div class="footerForm">
       <h3>Want to discuss a new project?</h3>
       <span> Say hello! let's discuss your ideas and make it happen </span>
-      <form action="https://formspree.io/f/mkndojaz" method="POST" onsubmit="sendMail()">
+      <form
+        action="https://formspree.io/f/mkndojaz"
+        method="POST"
+        onsubmit="sendMail()"
+      >
         <div class="textFields">
           <input
             class="inputFields"
@@ -41,8 +45,11 @@
         <div class="checkbox">
           <input type="checkbox" id="checkbox" required />
           <label for="checkbox">
-            I've read the <a href="privacyPolicy">privacy policy</a> and agree
-            to the processing of my data as outlined
+            I've read the
+            <a (click)="scrollToTop()" [routerLink]="['privacyPolicy']"
+              >privacy policy</a
+            >
+            and agree to the processing of my data as outlined
           </label>
         </div>
         <button>Send message</button>
@@ -76,7 +83,7 @@
   </div>
   <div class="legalNotice">
     <div>
-      <a href="legalNotice">Legal notice</a>
+      <a (click)="scrollToTop()" [routerLink]="['imprint']">Legal notice</a>
     </div>
   </div>
 </div>
