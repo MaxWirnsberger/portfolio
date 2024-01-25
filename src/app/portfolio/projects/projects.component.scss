@@ -8,16 +8,19 @@
       font-size: 78px;
       font-weight: 800;
       margin: 0;
+      padding-left: 16px;
 
       &:hover {
         color: #5988ff;
       }
     }
-
-    > span {
-      margin-top: 35px;
-      font-size: 23px;
-      font-weight: 400;
+    .subheaderProjects {
+      padding-left: 16px;
+      > span {
+        margin-top: 35px;
+        font-size: 23px;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -167,7 +170,13 @@
       left: 600px;
 
       .projectTitle {
-        font-size: 40px;
+        font-size: 35px;
+      }
+
+      .projectButtons {
+        > a {
+          padding: 20px 30px 20px 30px !important;
+        }
       }
     }
   }
@@ -175,12 +184,20 @@
 
 @media (max-width: 1050px) {
   .leftImgProject {
-    .projectText {
-      left: 580px;
-
-      .projectTitle {
-        font-size: 35px;
+    .projectImg {
+      .imgProject {
+        width: 500px;
+        height: auto;
       }
+    }
+    .projectText {
+      left: 480px;
+    }
+  }
+
+  .leftImgProject:hover {
+    .projectText {
+      left: 480px;
     }
   }
 }
@@ -212,6 +229,11 @@
         filter: grayscale(0);
       }
 
+      .imgProject {
+        width: 620px;
+        height: auto;
+      }
+
       &::before {
         width: 620px;
         opacity: 1;
@@ -233,7 +255,7 @@
   .leftImgProject {
     .projectImg {
       > img {
-        width: 85%;
+        width: 85%!important;
         height: auto;
       }
       &::before {
@@ -242,16 +264,8 @@
       }
       .arrowProject {
         left: 83%;
-      }
-    }
-  }
-}
-
-@media (max-width: 550px) {
-  .projectContent {
-    > div {
-      > h2 {
-        font-size: 70px;
+        width: 75.7px!important;
+        height: 75.7px!important;
       }
     }
   }
@@ -261,8 +275,8 @@
   .leftImgProject {
     .projectImg {
       .arrowProject {
-        width: 40px;
-        height: 40px;
+        width: 40px!important;
+        height: 40px!important;
         left: 85%;
       }
     }
@@ -272,7 +286,7 @@
 
       .projectButtons {
         > a {
-          padding: 15px!important;
+          padding: 15px !important;
         }
       }
     }
@@ -289,11 +303,27 @@
   }
 }
 
+
 @media (max-width: 490px) {
   .projectContent {
     > div {
       > h2 {
         font-size: 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .projectContent {
+    > div {
+      > h2 {
+        font-size: 40px;
+      }
+      > div {
+        > span {
+          font-size: 16px;
+        }
       }
     }
   }

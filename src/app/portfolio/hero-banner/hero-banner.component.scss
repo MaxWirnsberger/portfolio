@@ -1,3 +1,7 @@
+.fullHero{
+  height: 100vh;
+}
+
 .navBar{
     background-color: #FFFCF3;
 }
@@ -37,7 +41,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     font-size: 23px;
-    padding: 0 16px 0 16px;
+    padding: 50px 16px 0 16px;
+
 
     >a{
         text-decoration: none;

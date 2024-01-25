@@ -114,6 +114,7 @@
   .skillContainer {
     > div {
       padding: 0px 10px 0px 10px;
+      gap: 60px;
     }
 
     > h2 {
@@ -134,12 +135,20 @@
 @media (max-width: 400px) {
   .skillContainer {
     > div {
-      gap: 30px;
+      gap: 45px;
     }
 
     > h2 {
       font-size: 35px;
       top: -35px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .skillContainer {
+    > div {
+      gap: 60px;
     }
   }
 }
