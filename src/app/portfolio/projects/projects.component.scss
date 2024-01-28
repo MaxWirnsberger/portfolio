@@ -271,6 +271,16 @@
   }
 }
 
+@media (max-width: 570px) {
+  .projectContent {
+    > div {
+      > h2 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
 @media (max-width: 520px) {
   .leftImgProject {
     .projectImg {
